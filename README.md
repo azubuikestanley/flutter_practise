@@ -1,4 +1,6 @@
-# first_app
+# Personality
+
+Just for fun!!! 
 
 A new Flutter project.
 
