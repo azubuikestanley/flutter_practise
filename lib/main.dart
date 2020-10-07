@@ -39,10 +39,10 @@ class _MyAppState extends State<MyApp> {
     {
       'questionText': 'Who\'s your favorite instructor?',
       'answers': [
-        {'text': 'Stan', 'score': 1},
-        {'text': 'Iyke', 'score': 1},
-        {'text': 'Mary', 'score': 1},
         {'text': 'Stanley', 'score': 1},
+        {'text': 'Stella', 'score': 1},
+        {'text': 'Sandra', 'score': 1},
+        {'text': 'Samson', 'score': 1},
       ],
     },
   ];
@@ -63,7 +63,7 @@ class _MyAppState extends State<MyApp> {
     setState(() {
       _questionIndex = _questionIndex + 1;
     });
-    print(_questionIndex);
+    // print(_questionIndex);
     if (_questionIndex < _questions.length) {
       print('We have more question');
     } else {
@@ -76,7 +76,7 @@ class _MyAppState extends State<MyApp> {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('My Second App'),
+          title: Text('Personality App'),
         ),
         body: _questionIndex < _questions.length
             ? Quiz(
